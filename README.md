@@ -24,10 +24,10 @@ A powerful, responsive, and AI-ready **Online Code Editor** built with [Next.js 
 ## 🖼️ Screenshots
 
 ### Desktop View  
-![Desktop Editor View](./assets/screenshots/desktop.png)
+![Desktop Editor View](/desktop.png)
 
 ### Mobile View  
-![Mobile View](./assets/screenshots/mobile.png)
+![Mobile View](/mobile.jpeg)
 
 ---
 

@@ -1,36 +1,149 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# ⚡ Online Code Editor
 
-First, run the development server:
+A powerful, responsive, and AI-ready **Online Code Editor** built with [Next.js App Router](https://nextjs.org/docs/app), [Monaco Editor](https://microsoft.github.io/monaco-editor/), and [Judge0 API](https://judge0.com/) to support multiple programming languages. Perfect for interview prep, coding practice, and real-time execution.
+
+> 💡 _"A degree ≠ a job" — Practice, Learn, and Build Skills that Matter._
+
+---
+
+## 🚀 Features
+
+- ✅ **Live Code Execution** with Judge0 API
+- 🎯 **Multiple Language Support** (JavaScript, Python, Java, C++, etc.)
+- 🧠 **Smart UI**: Tabbed interface for editor, input, and output
+- 🌙 **Theme Toggle**: Dark, Light & High Contrast
+- 🔠 **Custom Font Size**
+- 📥 Code Input (stdin)
+- 📤 Upload / Download / Copy Code (UI ready)
+- 📱 Fully Responsive (Desktop & Mobile views)
+- 🔒 API Key is protected via Next.js API routes
+
+---
+
+## 🖼️ Screenshots
+
+### Desktop View  
+![Desktop Editor View](./assets/screenshots/desktop.png)
+
+### Mobile View  
+![Mobile View](./assets/screenshots/mobile.png)
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech         | Description                           |
+|--------------|---------------------------------------|
+| `Next.js`    | App Router, API Routes for security   |
+| `Monaco Editor` | Best-in-class VSCode-like code editor |
+| `Judge0 API` | Compile & run code in multiple languages |
+| `Tailwind CSS` | Modern utility-first CSS framework   |
+| `Lucide React` | Beautiful icons for UI               |
+
+---
+
+## 📁 Project Structure
+
+/src
+├── app
+│   └── code-editor
+│       └── page.js        # Main Editor Component
+├── components
+│   └── Editor.js          # Monaco Editor integration
+├── api
+│   └── judge0
+│       ├── index.js       # POST to create submission
+│       ├── result.js      # GET result from token
+│       └── languages.js   # Fetch list of languages
+
+
+---
+
+## 🧪 Local Setup
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 1. Clone the repo
+git clone https://github.com/your-username/online-code-editor.git
+
+# 2. Install dependencies
+cd online-code-editor
+npm install
+
+# 3. Add environment variables
+touch .env.local
+````
+
+```env
+# .env.local
+RAPID_API_KEY=your_judge0_rapidapi_key
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+# 4. Run the app
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔐 Environment Variables
 
-## Learn More
+| Variable        | Description                        |
+| --------------- | ---------------------------------- |
+| `RAPID_API_KEY` | Your RapidAPI key for Judge0 usage |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚠️ Error Handling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* ✅ Missing code/language → User prompt
+* ❌ Invalid API key → Error message
+* 🚫 Daily limit exceeded → Friendly rate limit message
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💡 Inspiration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is inspired by the need for a **practical, skill-based learning tool**. Whether you're preparing for coding interviews or practicing DSA, this tool helps you test and run your code instantly.
+
+> *"Because your skill should speak louder than your degree."* 👨‍💻
+
+---
+
+## 📜 License
+
+MIT © [Your Name](https://your-portfolio-link.com)
+
+---
+
+## 🙌 Acknowledgements
+
+* [Judge0 API](https://judge0.com/)
+* [Monaco Editor](https://microsoft.github.io/monaco-editor/)
+* [Next.js](https://nextjs.org/)
+* [Lucide Icons](https://lucide.dev/)
+
+---
+
+## 🌐 Live Demo (Optional)
+
+Visit Here: [https://nikhilkandhare.vercel.app/code-editor](https://nikhilkandhare.vercel.app/code-editor)
+
+---
+
+## 👨‍💻 Developed By
+
+[Nikhil V Kandhare](https://nikhilkandhare.vercel.app/)
+*#A degree ≠ a job*
+
+---
+
+```
+
+Let me know if:
+- You want it in a downloadable `.md` file
+- You want badges, GitHub actions, or live demo integration
+- You’d like to turn this into a public GitHub repository template
+
+Would you like me to generate the folder structure or logo too?
+```

@@ -47,17 +47,15 @@ A powerful, responsive, and AI-ready **Online Code Editor** built with [Next.js 
 
 /src
 ├── app
-│   └── code-editor
-│       └── page.js        # Main Editor Component
+│ └── code-editor
+│ └── page.js # Main Editor Component
 ├── components
-│   └── Editor.js          # Monaco Editor integration
+│ └── Editor.js # Monaco Editor integration
 ├── api
-│   └── judge0
-│       ├── index.js       # POST to create submission
-│       ├── result.js      # GET result from token
-│       └── languages.js   # Fetch list of languages
-
-
+│ └── judge0
+│ ├── index.js # POST to create submission
+│ ├── result.js # GET result from token
+│ └── languages.js # Fetch list of languages
 ---
 
 ## 🧪 Local Setup
